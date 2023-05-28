@@ -14,17 +14,18 @@
 <body>
     <span class="header">
         <h1>VERY BASIC ROCK PAPER SCISSORS GAME</h1>
+        <h2 id="round">ROUND 1</h2>
     </span>
     <span class="main">
         <div class="container">
             <div class="row playerScore">
                 <div class="col">
                     <h2 class="p-label">Player</h2>
-                    <p class="p-count count">0</p>
+                    <p class="p-count count" id="playerScore">0</p>
                 </div>
                 <div class="col computerScore">
                     <h2 class="c-label">Computer</h2>
-                    <p class="c-count count">0</p>
+                    <p class="c-count count" id="computerScore">0</p>
                 </div>
             </div>
             <div class="move">Choose your move</div>
@@ -33,7 +34,6 @@
                 <button type="button" class="btn btn-paper" id="1" onclick="myChoice('paper')">PAPER</button>
                 <button type="button" class="btn btn-scissors" id="2" onclick="myChoice('scissors')">SCISSORS</button>
             </div>
-            <div><button type="button" class="btn btn-restart" id="restartBtn">RESTART</button></div>
             <div class="result" id="result"></div>
         </div>
     </span>
